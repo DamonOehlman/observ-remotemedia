@@ -1,0 +1,29 @@
+{
+  "name": "observ-remotemedia",
+  "version": "1.0.0",
+  "description": "Retrieve remote media as binary data and load into an object url using createObjectUrl (useful for building chrome apps)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DamonOehlman/observ-remotemedia.git"
+  },
+  "keywords": [
+    "observ",
+    "chromeapp"
+  ],
+  "author": "Damon Oehlman <damon.oehlman@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DamonOehlman/observ-remotemedia/issues"
+  },
+  "homepage": "https://github.com/DamonOehlman/observ-remotemedia",
+  "dependencies": {
+    "binary-xhr": "0.0.2",
+    "feature": "^1.0.0",
+    "observ": "^0.2.0",
+    "observ-struct": "^6.0.0"
+  }
+}
