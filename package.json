@@ -4,7 +4,8 @@
   "description": "Retrieve remote media as binary data and load into an object url using createObjectUrl (useful for building chrome apps)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gendocs": "gendocs > README.md"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   "homepage": "https://github.com/DamonOehlman/observ-remotemedia",
   "dependencies": {
     "binary-xhr": "0.0.2",
+    "buffer-url": "^1.0.0",
     "feature": "^1.0.0",
     "observ": "^0.2.0",
     "observ-struct": "^6.0.0"
