@@ -1,6 +1,6 @@
 {
   "name": "observ-remotemedia",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Retrieve remote media as binary data and load into an object url using createObjectUrl (useful for building chrome apps)",
   "main": "index.js",
   "scripts": {
