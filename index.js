@@ -22,6 +22,7 @@ var bufferUrl = require('buffer-url');
 module.exports = function(initialVal) {
   var remote = Observ();
   var local = Observ();
+  var currentRemote;
 
   function fetch(url) {
     xhr(url, function(err, data) {
@@ -33,6 +34,7 @@ module.exports = function(initialVal) {
       }
 
       local.set(bufferUrl(data));
+      currentRemote = url;
     });
   }
 
@@ -53,7 +55,7 @@ module.exports = function(initialVal) {
   }
 
   remote(function(val) {
-    if (val) {
+    if (val && val !== currentRemote) {
       fetch(val);
     }
   });
