@@ -20,8 +20,8 @@ var bufferUrl = require('buffer-url');
 
 **/
 module.exports = function(initialVal) {
-  var remote = Observ();
-  var local = Observ();
+  var remote = Observ('');
+  var local = Observ('');
   var currentRemote;
 
   function fetch(url) {
